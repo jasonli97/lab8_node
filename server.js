@@ -1,11 +1,7 @@
-// loads the http module
 var http = require('http'),
   fs = require('fs');
 
-
-// store the port number that our server will be on
 var port = 1337;
-
 
 function serveStaticFile(res, path, contentType, responseCode) {
    if (!responseCode) responseCode = 200;
